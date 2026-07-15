@@ -104,7 +104,7 @@ function highlightActiveSection() {
 
     sections.forEach(section => {
         const sectionHeight = section.offsetHeight;
-        const sectionTop = section.offsetTop - 100;
+        const sectionTop = section.offsetTop - 70;
         const sectionId = section.getAttribute('id');
         const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
 
@@ -128,7 +128,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
         
         if (target) {
-            const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+            const offsetTop = target.offsetTop - 56; // Account for fixed navbar
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
